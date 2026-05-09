@@ -5,7 +5,6 @@ import { Phone, Mail, MapPin, ExternalLink, Github, Download } from "lucide-reac
 
 const ResumeSection = () => {
   const contact = {
-    phone: "8610822283",
     email: "narmathajanar@gmail.com",
     location: "Salem, TamilNadu, India",
     linkedin: "www.linkedin.com/in/narmatha-j-b2181a300",
@@ -92,10 +91,10 @@ const ResumeSection = () => {
                 <CardTitle className="text-lg font-semibold">Contact</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                <div className="flex items-center gap-3">
+                {/* <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-primary" />
                   <span className="text-sm">{contact.phone}</span>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary" />
                   <span className="text-sm">{contact.email}</span>
