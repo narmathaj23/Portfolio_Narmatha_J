@@ -12,7 +12,25 @@ const ProjectsSection = () => {
       status: "Completed",
       icon: Shield,
       color: "bg-accent-purple",
-      githubUrl: "https://github.com/NarmathaHub"
+      githubUrl: "https://github.com/narmathaj23/Risk-Analyzer-pro"
+    },
+    {
+      title: "Modern SaaS Landing Page UI Design",
+      description: "A modern SaaS landing Page designed in Figma featuring a dark theme, analytics widgets, and clean typography. This Project explores layout, visua hierarchy, and user interface design principles.",
+      technologies: ["HTML", "css","JavaScript", "UI/UX"],
+      status: "Completed",
+      icon: Shield,
+      color: "bg-accent-purple",
+      githubUrl: "https://www.behance.net/gallery/251433027/Modern-SaaS-Landing-Page-UI-Design"
+    },
+    {
+      title: "Sweet Delights - Animated Donut Website UI",
+      description: "This project showcases a donut-themed landing page designed in figma with interactive animations and transitions. The prototype demonstrates user flow, visual design, and motion effects to create an engaging web experience.",
+      technologies: ["Figma", "Adobe","Photoshop"],
+      status: "Completed",
+      icon: Shield,
+      color: "bg-accent-purple",
+      githubUrl: "https://www.behance.net/gallery/251432355/Sweet-Delights-Animated-Donut-Website-UI"
     },
     {
       title: "MoodMate - AI-Powered Mood Tracker",
@@ -21,7 +39,7 @@ const ProjectsSection = () => {
       status: "Completed",
       icon: Smile,
       color: "bg-secondary",
-      githubUrl: "https://github.com/narmathaj23/MoodMate-UI-UX"
+      githubUrl: "https://www.behance.net/gallery/251433565/Mood-Tracking-App-UIUX-Design"
     },
     {
       title: "ChatGPT Clone",

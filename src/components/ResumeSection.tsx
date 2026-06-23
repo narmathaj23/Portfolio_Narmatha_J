@@ -25,8 +25,6 @@ const ResumeSection = () => {
     "Copyright Risk Analyzer Pro",
     "NEXT-Website",
     "Spotify- Web Player",
-    "Student Attendance System in Java",
-    "Student Management System in Java",
     "Login Page Website by using HTML and CSS",
     "E-Commerce Website"
   ];

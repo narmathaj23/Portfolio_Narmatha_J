@@ -21,7 +21,7 @@ const HeroSection = () => {
                 NARMATHA J
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-primary-foreground/90">
-                Full Stack Web Developer
+                UI/UX & FRONT END DEVELOPER
               </h2>
               <p className="text-lg text-primary-foreground/70 max-w-lg">
                 Eager beginner with a solid understanding of frontend and backend development technologies

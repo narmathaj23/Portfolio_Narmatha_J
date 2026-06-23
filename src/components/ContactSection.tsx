@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Linkedin, Github, Send, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Send, MessageCircle,Palette  } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from '@emailjs/browser';
@@ -67,21 +67,14 @@ const ContactSection = () => {
       value: "narmathajanar@gmail.com",
       href: "mailto:narmathajanar@gmail.com",
       color: "bg-primary"
-    },
-    // {
-    //   icon: Phone,
-    //   label: "Phone",
-    //   value: "8610822283",
-    //   href: "tel:8610822283",
-    //   color: "bg-secondary"
-    // },
+    },  
     {
-      icon: MapPin,
-      label: "Location",
-      value: "Salem, Tamil Nadu, India",
-      href: "#",
-      color: "bg-pink-500"
-    },
+      icon: Palette,
+      label: "Behance",
+      value: "View my designs",
+      href: "https://www.behance.net/narmathaj",
+      color: "bg-purple-600"
+    },  
     {
       icon: Linkedin,
       label: "LinkedIn",
