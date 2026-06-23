@@ -21,10 +21,10 @@ const HeroSection = () => {
                 NARMATHA J
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-primary-foreground/90">
-                UI/UX & FRONT END DEVELOPER
+                UI/UX & FRONTEND DEVELOPER
               </h2>
               <p className="text-lg text-primary-foreground/70 max-w-lg">
-                Eager beginner with a solid understanding of frontend and backend development technologies
+                Eager beginner with a solid understanding of ui/ux and frontend development technologies
               </p>
             </div>
             
