@@ -55,7 +55,7 @@ const AboutSection = () => {
                       2022 - 2026
                     </div>
                     <div className="bg-accent-pink text-foreground px-3 py-1 rounded-full text-sm font-medium">
-                      Current Student
+                      Graduate
                     </div>
                   </div>
                 </div>
