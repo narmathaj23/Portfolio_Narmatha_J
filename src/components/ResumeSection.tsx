@@ -4,12 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, ExternalLink, Github, Download } from "lucide-react";
 
 const ResumeSection = () => {
-  const contact = {
-    email: "narmathajanar@gmail.com",
-    location: "Salem, TamilNadu, India",
-    linkedin: "www.linkedin.com/in/narmatha-j-b2181a300",
-    github: "github.com/NarmathaHub"
-  };
+
 
   
 
@@ -55,7 +50,49 @@ const ResumeSection = () => {
     }
   ];
 
-  const skills = ["HTML", "CSS", "JavaScript", "SQL", "MongoDB", "Java", "C++", "Node.js", "UI/UX", "Figma", "Canva"];
+  const skills = [
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "React",
+  "Tailwind CSS",
+  "Node.js",
+  "SQL",
+  "MongoDB",
+  "Java",
+  "C++",
+
+  // UI/UX
+  "UI Design",
+  "UX Design",
+  "Wireframing",
+  "Prototyping",
+  "User Flow",
+  "Visual Design",
+  "Responsive Design",
+  "Accessibility",
+  "Information Architecture",
+
+  // Design Tools
+  "Figma",
+  "Auto Layout",
+  "Components",
+  "Interactive Prototyping",
+  "Canva",
+
+  // Developer Tools
+  "Git",
+  "GitHub",
+  "VS Code",
+  "IntelliJ IDEA",
+
+  // AI Tools
+  "ChatGPT",
+  "Claude",
+  "Google AI Studio",
+  "Google Stitch",
+  "Perplexity AI",
+];
   const languages = ["English", "Tamil", "Kannada"];
 
   return (
@@ -85,53 +122,8 @@ const ResumeSection = () => {
           <div className="space-y-6">
             {/* Contact */}
             <Card className="card-soft">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold">Contact</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {/* <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-primary" />
-                  <span className="text-sm">{contact.phone}</span>
-                </div> */}
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-primary" />
-                  <span className="text-sm">{contact.email}</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-primary" />
-                  <span className="text-sm">{contact.location}</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <ExternalLink className="w-4 h-4 text-primary" />
-                  <a href={`https://${contact.linkedin}`} className="text-sm text-primary hover:underline" target="_blank" rel="noopener noreferrer">
-                    LinkedIn Profile
-                  </a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Github className="w-4 h-4 text-primary" />
-                  <a href={`https://${contact.github}`} className="text-sm text-primary hover:underline" target="_blank" rel="noopener noreferrer">
-                    GitHub Profile
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Education */}
-            <Card className="card-soft">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold">Education</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-primary/20 pl-4">
-                    <h4 className="font-medium text-sm">{edu.level}</h4>
-                    <p className="text-xs text-muted-foreground">{edu.school}</p>
-                    <p className="text-xs text-muted-foreground">
-                      {edu.year} • {edu.percentage || `CGPA: ${edu.cgpa}`}
-                    </p>
-                  </div>
-                ))}
-              </CardContent>
+            
+              
             </Card>
 
             {/* Skills */}

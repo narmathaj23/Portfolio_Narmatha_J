@@ -140,69 +140,11 @@ const ContactSection = () => {
               <h4 className="font-semibold text-foreground mb-3">Quick Response</h4>
               <p className="text-muted-foreground">
                 I typically respond to emails within 24 hours. For urgent matters, 
-                feel free to call or connect with me on LinkedIn.
+                feel free to connect with me on LinkedIn.
               </p>
             </Card>
           </div>
 
-          {/* Contact Form */}
-          <div className="slide-up">
-            <Card className="card-soft p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-foreground font-medium">Name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    placeholder="Your full name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="focus:ring-2 focus:ring-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-foreground font-medium">Email</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="your.email@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="focus:ring-2 focus:ring-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground font-medium">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me about your project or just say hello!"
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    className="focus:ring-2 focus:ring-primary resize-none"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  disabled={isLoading}
-                  className="w-full bg-primary hover:bg-primary-dark text-white font-medium disabled:opacity-50"
-                >
-                  <Send className="w-5 h-5 mr-2" />
-                  {isLoading ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
-            </Card>
-          </div>
         </div>
       </div>
     </section>

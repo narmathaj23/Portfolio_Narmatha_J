@@ -1,10 +1,31 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, Code, Palette, Database, Plus, MessageSquare, Shield, Smile } from "lucide-react";
+import { Code, Palette, Database, Plus, MessageSquare, Shield, Smile } from "lucide-react";
+import { FaGithub, FaBehance } from "react-icons/fa";
 
 const ProjectsSection = () => {
   const placeholderProjects = [
+
+
+    {
+  title: "SaveHER – Women's Safety App",
+  description:
+    "An end-to-end UI/UX case study for a women's safety mobile application focused on enabling users to trigger emergency help quickly without unlocking their phone. The project includes user research, wireframes, user flows, high-fidelity UI design, and an interactive prototype.",
+  technologies: [
+    "Figma",
+    "Wireframing",
+    "Prototyping",
+    "User Flow",
+    "UI Design"
+  ],
+  status: "Completed",
+  icon: Shield,
+  color: "bg-accent-pink",
+
+  type: "behance",
+  url: "https://www.behance.net/gallery/251952333/SaveHER-Womens-Safety-App-UIUX-Case-Study",
+},
     {
       title: "Copyright Risk Analyzer Pro",
       description: "AI-powered web app analyzing multi-format content (text, images, video, audio) to detect copyright risks before publishing, with drag-and-drop uploads, real-time feedback, and animated dashboards.",
@@ -14,6 +35,7 @@ const ProjectsSection = () => {
       color: "bg-accent-purple",
       githubUrl: "https://github.com/narmathaj23/Risk-Analyzer-pro"
     },
+    
     {
       title: "Modern SaaS Landing Page UI Design",
       description: "A modern SaaS landing Page designed in Figma featuring a dark theme, analytics widgets, and clean typography. This Project explores layout, visua hierarchy, and user interface design principles.",
@@ -121,16 +143,47 @@ const ProjectsSection = () => {
                   </div>
                   
                   <div className="flex gap-2 pt-2">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1"
-                      disabled={project.status !== "Completed"}
-                      onClick={() => project.githubUrl && window.open(project.githubUrl, '_blank')}
-                    >
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
+                    <Button
+  variant={
+    [
+      "SaveHER – Women's Safety App",
+      "Modern SaaS Landing Page UI Design",
+      "Sweet Delights - Animated Donut Website UI",
+      "MoodMate - AI-Powered Mood Tracker",
+    ].includes(project.title)
+      ? "default"
+      : "outline"
+  }
+  size="sm"
+  className={
+    [
+      "SaveHER – Women's Safety App",
+      "Modern SaaS Landing Page UI Design",
+      "Sweet Delights - Animated Donut Website UI",
+      "MoodMate - AI-Powered Mood Tracker",
+    ].includes(project.title)
+      ? "flex-1 bg-[#1769FF] hover:bg-[#0057e7] text-white"
+      : "flex-1"
+  }
+  onClick={() => window.open(project.githubUrl, "_blank")}
+>
+  {[
+    "SaveHER – Women's Safety App",
+    "Modern SaaS Landing Page UI Design",
+    "Sweet Delights - Animated Donut Website UI",
+    "MoodMate - AI-Powered Mood Tracker",
+  ].includes(project.title) ? (
+    <>
+      <FaBehance className="mr-2 h-4 w-4" />
+      View Case Study
+    </>
+  ) : (
+    <>
+      <FaGithub className="mr-2 h-4 w-4" />
+      View Code
+    </>
+  )}
+</Button>
                   </div>
                 </div>
               </div>

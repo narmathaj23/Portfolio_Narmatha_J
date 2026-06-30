@@ -23,9 +23,28 @@ const HeroSection = () => {
               <h2 className="text-2xl lg:text-3xl font-semibold text-primary-foreground/90">
                 UI/UX & FRONTEND DEVELOPER
               </h2>
-              <p className="text-lg text-primary-foreground/70 max-w-lg">
-                Eager beginner with a solid understanding of ui/ux and frontend development technologies
-              </p>
+              <p className="text-lg text-primary-foreground/70 max-w-xl leading-relaxed">
+  I design intuitive digital experiences and transform them into responsive,
+  interactive websites. Explore my complete UI/UX case studies on Behance and
+  my frontend development projects below.
+</p>
+
+<div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+  <Button
+    asChild
+    size="lg"
+    className="bg-white text-black hover:bg-gray-200 rounded-full px-8"
+  >
+    <a
+      href="https://www.behance.net/narmathaj"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      🎨 View Behance
+    </a>
+  </Button>
+
+</div>
             </div>
             
           </div>

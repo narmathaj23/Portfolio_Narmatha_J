@@ -12,26 +12,81 @@ const SkillsSection = () => {
   ];
 
   const categories = [
-    {
-      title: "Frontend Development",
-      icon: Globe,
-      skills: ["HTML5", "CSS3", "JavaScript", "React"],
-      color: "bg-primary"
-    },
-    {
-      title: "Design",
-      icon: Paintbrush,
-      skills: ["UI/UX Design", "Responsive Design", "Figma", "Canva"],
-      color: "bg-accent-pink"
-    },
-    {
-      title: "Backend",
-      icon: Database,
-      skills: ["Node.js", "SQL", "Database Integration", "API Development"],
-      color: "bg-secondary"
-    }
-  ];
-
+  {
+    title: "UI/UX Design",
+    icon: Paintbrush,
+    color: "bg-accent-pink",
+    skills: [
+      "Wireframing",
+      "Prototyping",
+      "UI Design",
+      "User Flow Design",
+      "Visual Design",
+      "Information Architecture",
+      "Accessibility",
+      "Responsive Design",
+    ],
+  },
+  {
+    title: "Design Tools",
+    icon: Palette,
+    color: "bg-accent-purple",
+    skills: [
+      "Figma",
+      "Auto Layout",
+      "Components",
+      "Interactive Prototyping",
+      "Canva",
+    ],
+  },
+  {
+    title: "Frontend Development",
+    icon: Globe,
+    color: "bg-primary",
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Tailwind CSS",
+      "React",
+    ],
+  },
+  {
+    title: "Developer Tools",
+    icon: Database,
+    color: "bg-secondary",
+    skills: [
+      "VS Code",
+      "Git",
+      "GitHub",
+      "IntelliJ IDEA",
+    ],
+  },
+  {
+    title: "AI Tools",
+    icon: Code,
+    color: "bg-accent-orange",
+    skills: [
+      "ChatGPT",
+      "Claude",
+      "Google AI Studio",
+      "Google Stitch",
+      "Perplexity AI",
+    ],
+  },
+  {
+    title: "Soft Skills",
+    icon: Palette,
+    color: "bg-accent-yellow",
+    skills: [
+      "Problem Solving",
+      "Communication",
+      "Adaptability",
+      "Time Management",
+      "Quick Learning",
+    ],
+  },
+];
   return (
     <section id="skills" className="py-20 px-4 bg-muted/30">
       <div className="container max-w-6xl mx-auto">
@@ -65,53 +120,110 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Skill Bars */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-6 slide-up">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Proficiency Levels</h3>
-            {skills.map((skill, index) => (
-              <div key={index} className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center gap-3">
-                    <skill.icon className="w-5 h-5 text-primary" />
-                    <span className="font-medium text-foreground">{skill.name}</span>
-                  </div>
-                  <span className="text-muted-foreground font-medium">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-muted rounded-full h-3">
-                  <div 
-                    className={`h-3 rounded-full ${skill.color} transition-all duration-1000 ease-out`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* About Skills */}
+<div className="text-center mt-16 mb-20">
+  <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+    I combine user-centered design principles with modern frontend development
+    to create intuitive, responsive, and visually engaging digital experiences.
+    My focus is on designing meaningful interfaces and transforming them into
+    functional products.
+  </p>
+</div>
 
-          <div className="slide-up">
-            <Card className="card-soft p-8 h-full">
-              <h3 className="text-2xl font-semibold mb-6 text-foreground">Currently Learning</h3>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 p-4 bg-primary/10 rounded-lg">
-                  <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                  <span className="text-foreground font-medium">Advanced React Patterns</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-secondary/10 rounded-lg">
-                  <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
-                  <span className="text-foreground font-medium">Node.js & Express</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-accent-pink/10 rounded-lg">
-                  <div className="w-3 h-3 bg-accent-pink rounded-full animate-pulse"></div>
-                  <span className="text-foreground font-medium">Database Management</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-accent-purple/10 rounded-lg">
-                  <div className="w-3 h-3 bg-accent-purple rounded-full animate-pulse"></div>
-                  <span className="text-foreground font-medium">DevOps Fundamentals</span>
-                </div>
-              </div>
-            </Card>
-          </div>
+{/* Education */}
+<div className="fade-in">
+  <div className="text-center mb-12">
+    <h2 className="text-4xl font-bold text-foreground mb-4">
+      Education
+    </h2>
+    <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+    <p className="text-muted-foreground mt-4 text-lg">
+      My academic journey and educational background
+    </p>
+  </div>
+
+  <div className="space-y-6">
+
+    {/* College */}
+    <Card className="card-soft p-6">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
+        <div>
+          <h3 className="text-xl font-bold text-foreground">
+            Gnanamani College of Technology
+          </h3>
+          <p className="text-primary font-medium">
+            B.E. Computer Science and Engineering
+          </p>
+          <p className="text-muted-foreground">
+            CGPA: <strong>8.2</strong>
+          </p>
         </div>
+
+        <div className="text-right">
+          <p className="font-medium text-foreground">
+            2022 – 2026
+          </p>
+          <p className="text-muted-foreground">
+            Namakkal, Tamil Nadu
+          </p>
+        </div>
+      </div>
+    </Card>
+
+    {/* HSC */}
+    <Card className="card-soft p-6">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
+        <div>
+          <h3 className="text-xl font-bold text-foreground">
+            SPS Matric Hr. Sec. School
+          </h3>
+          <p className="text-primary font-medium">
+            Higher Secondary Certificate (H.S.C)
+          </p>
+          <p className="text-muted-foreground">
+            Percentage: <strong>76%</strong>
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="font-medium text-foreground">
+            2020 – 2022
+          </p>
+          <p className="text-muted-foreground">
+            Salem, Tamil Nadu
+          </p>
+        </div>
+      </div>
+    </Card>
+
+    {/* SSLC */}
+    <Card className="card-soft p-6">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
+        <div>
+          <h3 className="text-xl font-bold text-foreground">
+            SPS Matric Hr. Sec. School
+          </h3>
+          <p className="text-primary font-medium">
+            Secondary School Leaving Certificate (S.S.L.C)
+          </p>
+          <p className="text-muted-foreground">
+            Percentage: <strong>88.8%</strong>
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="font-medium text-foreground">
+            2019 – 2020
+          </p>
+          <p className="text-muted-foreground">
+            Salem, Tamil Nadu
+          </p>
+        </div>
+      </div>
+    </Card>
+
+  </div>
+</div>
       </div>
     </section>
   );
